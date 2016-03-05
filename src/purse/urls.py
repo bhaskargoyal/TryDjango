@@ -18,6 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^money', 'money.views.index', name='money'),
+    url(r'^money/', 'money.views.index', name='money'),
+    url(r'^contact/', 'home.views.contact', name='contact'),
     url(r'^$', 'home.views.index', name='home'),
 ]

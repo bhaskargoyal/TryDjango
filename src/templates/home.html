@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOME LABS</title>
+	<title>Title</title>
 </head>
 <body>
 <h3>this page is for home.</h3>
+{{ title }}
+
+<form action="" method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="SignUp"/>
+</form>
 </body>
 </html>
